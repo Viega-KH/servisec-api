@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!dx84e(4@u*2ybngfg7%5$iil3i951dub6n!fvjj31=vykmw&q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -98,9 +98,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'database_nomi',  
+        'NAME': 'hardtech',  
         'USER': 'postgres', 
-        'PASSWORD': 'root',  
+        'PASSWORD': '123456',  
         'HOST': 'localhost',  
         'PORT': '5432',  
     }
