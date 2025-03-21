@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- #Wrapper -->
+
+
+{% for obj in data %}
+<li>{{ obj.title }}</li> 
+<li>{{ obj.content|safe }}</li> 
+{% endfor %}
+
+
+
+
+<!-- /#Wrapper -->
+{% endblock content %}
